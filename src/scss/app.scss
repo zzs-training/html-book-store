@@ -17,6 +17,6 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
-/* Vendor */
-
 /* Components */
+@import "components";
+@import "pages";
