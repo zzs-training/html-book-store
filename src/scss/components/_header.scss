@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0px;
+    font-family: 'Inter';
+    color: white;
+}
+
+.header__brand{
+display: flex;
+ width: 30%;
+
+ .socials{
+    width: 40%;
+    margin-left: 33px;
+    display: flex;
+    justify-content: space-between
+ }
+}
+
+
+.header__navCta{
+  width: 40%;
+  margin-left: 90px;
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+}

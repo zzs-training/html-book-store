@@ -1,0 +1,22 @@
+%flexItemCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin painSquare($size) {
+    @extend %flexItemCenter;
+    width: $size;
+    height: $size;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.brand__containerSquare {
+    @include painSquare($squareSize);
+    background-color: $white;
+}
+
+.brand__logo {
+    display: inline-flex;
+}
