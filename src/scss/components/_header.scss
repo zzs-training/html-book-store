@@ -2,7 +2,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 0px;
+    padding-top: 35px;
     font-family: 'Inter';
     color: white;
 }
@@ -27,4 +27,20 @@ display: flex;
     display: flex;
     justify-content: space-between;
 }
+}
+
+select{
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+
+  option:not(:checked){
+    color: black;
+    background-color: rgba(184, 184, 184, 0.288);
+  }
+  
+  option:checked{
+    background-color: $blue;
+  }
+  
 }
