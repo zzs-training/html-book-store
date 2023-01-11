@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-@mixin painSquare($size) {
+@mixin paintSquare($size) {
     @extend %flexItemCenter;
     width: $size;
     height: $size;
@@ -12,8 +12,8 @@
     min-height: 30px;
 }
 
-.brand__containerSquare {
-    @include painSquare($squareSize);
+.brand__container-square {
+    @include paintSquare($squareSize);
     background-color: $white;
 }
 
