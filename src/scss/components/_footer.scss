@@ -1,0 +1,24 @@
+
+.footer{
+    width: 1920px;
+    height: 510px;
+    background-color: $blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__content{
+        width: 1300px;
+        height: 342px;
+        margin: 0 auto ;
+        padding: 84px 310px;
+        background-color: red;
+    }
+
+    &__license{
+        width: 1300px;
+        height: 53px;
+        background-color: yellow;
+        margin: auto;
+    }
+}
