@@ -1,3 +1,15 @@
+.block-products{
+    width: 1299px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 150px auto;
+
+    .card-store{
+        width: calc((100% - 96px)/3);
+    }
+
+}
 
 .store-product-guide {
     width: 1300px;
@@ -18,7 +30,7 @@
         }
 
         h1{
-            font-weight: bold;
+            font-weight: 700;
         }
 
         &__content {
