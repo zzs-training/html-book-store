@@ -45,3 +45,29 @@
     }
   }
 }
+
+.introduction {
+  width: 633px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 138px auto 0px auto;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  &__line {
+    width: 55px;
+    height: 4px;
+    background-color: $yellow;
+  }
+
+  &__content {
+    text-align: center;
+    font-size: 19px;
+    color: $lightBlue;
+  }
+}
