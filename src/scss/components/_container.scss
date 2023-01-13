@@ -1,14 +1,33 @@
-.container__big{
+.container__big {
     width: 100%;
     padding: 150px 310px;
 }
 
-.container__small{
+.container__small {
     width: 100%;
     padding: 145px 310px;
 }
 
-.container__callout{
+.container__callout {
     width: 100%;
     padding: 121px 230px;
+}
+
+.container-local{
+    background-color: $blue;
+    padding: 0 $paddingValuePage;
+}
+
+.container-size-large {
+    height: 1124px;
+}
+
+.container-size-medium-2 {
+    height: 527px;
+    color: white;
+}
+
+.container-size-medium-1 {
+    width: 100%;
+    height: 510px;
 }
