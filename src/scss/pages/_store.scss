@@ -1,0 +1,41 @@
+
+.store-product-guide {
+    width: 1300px;
+    background-color: $yellow;
+    margin: 0px auto;
+    padding: 121px 230px;
+    color: $blue;
+
+    .introduction {
+        margin-top: 0px;
+        display: flex;
+        height: 264px;
+        width: 840px;
+        justify-content: space-between;
+
+        &__line {
+            background-color: $blue;
+        }
+
+        h1{
+            font-weight: bold;
+        }
+
+        &__content {
+            color: $blue;
+        }
+
+        &__cta-store {
+            display: flex;
+
+            input {
+                width: 529px;
+                margin-right: 11px;
+                color: $gray;
+                font-size: 17px;
+            }
+        }
+    }
+
+  
+}
