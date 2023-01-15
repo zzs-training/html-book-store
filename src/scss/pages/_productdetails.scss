@@ -19,6 +19,7 @@
     font-family: Inter;
     font-size: 19px;
     color: $gray;
+    margin-top: 150px;
 
     img {
         width: 30%;
@@ -90,7 +91,7 @@
     }
 }
 
-.product-button {
+.product__button {
     width: 679px;
     display: flex;
     justify-content: space-between;
@@ -165,5 +166,17 @@
             color: $blue;
             text-align: center;
         }
+    }
+}
+
+.footer {
+    position: relative;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-yellow-border {
+        color: white;
     }
 }
