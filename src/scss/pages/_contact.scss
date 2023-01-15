@@ -175,8 +175,6 @@
 
                         }
                     }
-
-
                 }
 
                 p {
@@ -217,6 +215,12 @@
     
                 .fix {
                     height: 198px;
+                     .card-item {
+                        .cicle {
+                            background-color: transparent;
+                            border: 2px solid $yellow ;
+                        }
+                     }
                 }
             }
     
