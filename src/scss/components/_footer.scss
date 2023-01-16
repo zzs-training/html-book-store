@@ -1,0 +1,101 @@
+.footer{
+    width: 1920px;
+    height: 510px;
+    background-color: $blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__content{
+        width: 1300px;
+        height: 280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 250px;
+            height: 120px;
+        }
+        
+        .right {
+            width: 870px;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+
+            .explore {
+               width: 189px;
+               height: 274px;
+            }
+
+            .utility {
+                width: 226px;
+                height: 274px;
+            }
+
+            .contact {
+                width: 322px;
+                height: 215px;
+                
+                .contact-content {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top:34px ;
+                    font-size: 18px;
+                    color: $light-brown;
+                    font-family: Inter;
+                    span {
+                        font-family: Cardo;
+                        color: $white;
+                    }
+                    
+                }
+            }
+               
+            .intro {
+                    font-size: 24px;
+                    font-family: Cardo;
+                    font-weight: 700;
+                    color: $white;
+                }
+
+               .explore-utility {
+                padding-top: 34px;
+    
+                font-size: 18px;
+                font-family: Inter;
+                font-weight: 400;
+                color: $light-brown;
+                display: flex;
+                flex-direction: column;
+               }
+            
+        }
+    }
+
+    &__license {
+        width: 1300px;
+        height: 52px;
+        // background-color: aqua;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: center;
+
+        .license-img {
+            padding-right: 7px;
+        }
+        .content {
+            padding-top: 18px;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: Inter;
+            color: $light-brown;
+
+            span{
+                color: $white;
+            }
+        }
+    }
+}
