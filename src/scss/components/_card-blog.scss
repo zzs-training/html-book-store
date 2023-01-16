@@ -1,4 +1,4 @@
-.blog {
+.card-blog {
     width: 410px;
     height: 600px;
     display: flex;
@@ -13,7 +13,7 @@
     &__content {
         padding: 24px 33px 28px 30px;
         
-        .title{
+        .title {
             font-family: Cardo;
             font-size: 24px;
             font-weight: 700;
@@ -21,7 +21,7 @@
             padding-bottom: 14px;
         }
 
-        .intro{
+        .intro {
             font-family: Inter;
             color: $gray;
             font-size: 19px;
