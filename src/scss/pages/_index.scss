@@ -1,12 +1,345 @@
 //Adding your page
+svg {
+    padding: 10px 100px;
+}
+
+%fontcardostyle {
+    font-family: Cardo;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+%fontinterstyle {
+    font-family: Inter;
+    font-size: 19px;
+    color: $white;
+}
+
+%flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__infor-details {
+    .frame {
+        width: 114px;
+        height: 63px;
+        @extend %flexcenter;
+
+        .circle {
+            height: 16px;
+            width: 16px;
+            background-color: $yellow;
+            border-radius: 50%;
+            margin-right: 13px
+        }
+
+        h4 {
+            @extend %fontcardostyle;
+            font-size: 24px;
+        }
+    }
+
+    p {
+        margin-left: 32px;
+    }
+}
+
 .home__heading {
-    height: 300px;
-    background-color:$blue;
+    height: 1100px;
+    background-color: $blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p {
+        @extend %fontinterstyle;
+        color: $light-blue;
+    }
+
     .container {
         background-color: $blue;
-        height: 400px;
+        width: 1300px;
+    }
+
+    &__introductions {
+        width: 1300px;
+        color: $white;
+        @extend %flexcenter;
+        justify-content: space-between;
+        margin: 30px 0 115px 0;
+
+        &-content {
+            width: 614px;
+            height: 600px;
+            @extend %flexcenter;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .wellcome-line {
+            display: flex;
+            align-items: center;
+
+            .line {
+                height: 1px;
+                width: 34px;
+                background-color: $yellow;
+                margin-right: 15px;
+            }
+
+            p {
+                color: $white;
+                font-family: Cardo;
+                font-style: italic;
+                font-size: 24px
+            }
+        }
+
+        h1 {
+            @extend %fontcardostyle;
+            font-size: 65px;
+        }
+
+        .cta {
+            width: 414px;
+            height: 65px;
+            @extend %flexcenter;
+            justify-content: space-between;
+
+            a {
+                @extend %fontcardostyle;
+                font-size: 19px;
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: white;
+                }
+            }
+        }
+
+        .infor {
+            width: 580px;
+            @extend %flexcenter;
+            justify-content: space-between;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+    }
+}
+
+.home__body {
+    p {
+        @extend %fontinterstyle;
+        color: $gray;
+        line-height: 30px
+    }
+
+    h3 {
+        @extend %fontcardostyle;
+        color: $blue;
+    }
+
+    &__books {
+        @extend %flexcenter;
+        height: 533px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 141px 0px;
+
+        p {
+            color: $gray;
+        }
+
+        .introduction {
+            height: 76px;
+            margin-top: 0px;
+        }
+
+        .books-products {
+            @extend %flexcenter;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 1400px;
+
+            .home__card {
+                @extend %flexcenter;
+                width: 670px;
+                height: 400px;
+
+                img {
+                    margin-top: 50px;
+                }
+
+                &__content {
+                    width: 350px;
+                    height: 333px;
+                    @extend %flexcenter;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h4 {
+                        color: $blue;
+                    }
+                }
+
+                .product__infor {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    &__author {
+        background-color: #F4F8FF;
+        padding: 150px 310px;
+        position: relative;
+        z-index: -2;
+
+        &-container {
+            @extend %flexcenter;
+            justify-content: space-between;
+            width: 1300px;
+            height: 990px;
+            margin: 0 auto;
+        }
+
+        &__img {
+            max-width: 550px;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 550px;
+                height: 650px;
+                border: 15px solid $yellow;
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                z-index: -1;
+            }
+        }
+
+        &__content {
+            width: 568px;
+            height: 568px;
+            position: relative;
+            @extend %flexcenter;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .line-w {
+                height: 1px;
+                width: 55px;
+                background-color: $yellow;
+                margin: 22px 0;
+            }
+
+            .line-h {
+                height: 88px;
+                width: 1px;
+                background-color: $yellow;
+
+            }
+
+            .counter {
+                width: 590px;
+                @extend %flexcenter;
+                justify-content: space-between;
+
+                &__style {
+                    @extend %flexcenter;
+
+                    &__content {
+                        margin-right: 32px;
+                    }
+                }
+            }
+
+            .qrcode {
+                width: 477px;
+                @extend %flexcenter;
+                justify-content: space-between;
+                background-color: $blue;
+                padding: 15px 18px;
+
+                p {
+                    color: $light-blue;
+                }
+
+                &__content {
+                    height: 101px;
+                    @extend %flexcenter;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    h4 {
+                        @extend %fontcardostyle;
+                        font-size: 24px;
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    &__trusted {
+        padding: 205px 0;
+        h4 {
+            @extend %fontcardostyle;
+            font-size: 24px;
+            color: $blue;
+            margin-bottom: 9px
+        }
+
+        .trusted-container {
+            @extend %flexcenter;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 335px;
+
+            .trusted__header {
+                @extend %flexcenter;
+                flex-direction: column;
+
+                .line-w {
+                    width: 55px;
+                    height: 2px;
+                    background-color: $yellow;
+                    margin-top: 22px;
+                }
+            }
+
+            .trusted__body {
+                width: 1300px;
+                @extend %flexcenter;
+                justify-content: space-between;
+
+
+                &__card {
+                    width: calc((100% - 291px)/4);
+                    height: 209px;
+                    @extend %flexcenter;
+                    flex-direction: column;
+
+                    img {
+                        max-width: 189px;
+                    }
+
+                    .card__content {
+                        text-align: center;
+                        margin-top: auto;
+                    }
+                }
+            }
+        }
     }
 }
