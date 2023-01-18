@@ -21,6 +21,22 @@ svg {
     align-items: center;
 }
 
+.img-design {
+    max-width: 550px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 550px;
+        height: 650px;
+        border: 15px solid $yellow;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: -1;
+    }
+}
+
 .home__infor-details {
     .frame {
         width: 114px;
@@ -145,6 +161,18 @@ svg {
         color: $blue;
     }
 
+    .homepage__header-content {
+        @extend %flexcenter;
+        flex-direction: column;
+
+        .line-w {
+            width: 55px;
+            height: 2px;
+            background-color: $yellow;
+            margin-top: 22px;
+        }
+    }
+
     &__books {
         @extend %flexcenter;
         height: 533px;
@@ -208,22 +236,6 @@ svg {
             width: 1300px;
             height: 990px;
             margin: 0 auto;
-        }
-
-        &__img {
-            max-width: 550px;
-            position: relative;
-
-            &::after {
-                content: '';
-                width: 550px;
-                height: 650px;
-                border: 15px solid $yellow;
-                position: absolute;
-                top: 40px;
-                left: 40px;
-                z-index: -1;
-            }
         }
 
         &__content {
@@ -293,6 +305,7 @@ svg {
 
     &__trusted {
         padding: 205px 0;
+
         h4 {
             @extend %fontcardostyle;
             font-size: 24px;
@@ -305,18 +318,6 @@ svg {
             flex-direction: column;
             justify-content: space-between;
             height: 335px;
-
-            .trusted__header {
-                @extend %flexcenter;
-                flex-direction: column;
-
-                .line-w {
-                    width: 55px;
-                    height: 2px;
-                    background-color: $yellow;
-                    margin-top: 22px;
-                }
-            }
 
             .trusted__body {
                 width: 1300px;
@@ -337,6 +338,99 @@ svg {
                     .card__content {
                         text-align: center;
                         margin-top: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__cta {
+        @extend %flexcenter;
+        background-color: $blue;
+        padding: 37px 0;
+
+        p {
+            color: $light-blue
+        }
+
+        .cta-container {
+            @extend %flexcenter;
+
+            .cta__content {
+                width: 567px;
+                height: 262px;
+                @extend %flexcenter;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .homepage__header-content {
+                    align-items: flex-start;
+
+                    h3 {
+                        color: $white;
+                    }
+                }
+
+                .btnbasic {
+                    color: $white ;
+                }
+            }
+        }
+    }
+
+    &__stepbystep {
+        padding: 145px 0px;
+
+        h4 {
+            @extend %fontcardostyle;
+            font-size: 24px;
+            line-height: 30px;
+            color: $blue
+        }
+
+        .stepbystep-container {
+            @extend %flexcenter;
+            flex-direction: column;
+
+            .stepbystep__body {
+                width: 1260px;
+                @extend %flexcenter;
+                justify-content: space-between;
+                margin-top: 53px;
+
+                .img-design {
+                    right: 40px;
+                    bottom: 20px;
+                }
+
+                &__content {
+                    width: 610px;
+                    @extend %flexcenter;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+    
+                    &__card {
+                        width: calc((100% - 30px)/2);
+                        height: 299px;
+                        background-color:#F4F8FF;
+                        @extend %flexcenter;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 41px 33px;
+
+                        &:nth-child(n+3) {
+                            margin-top: 30px;
+                        }
+
+                        .card__oder {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @extend %flexcenter;
+                            background-color: $yellow;
+                        }
                     }
                 }
             }
