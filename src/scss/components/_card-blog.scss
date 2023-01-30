@@ -1,0 +1,52 @@
+.card-blog {
+    width: 410px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 410px;
+        height: 330px;
+        display: block;
+    }
+
+    &__content {
+        padding: 24px 33px 28px 30px;
+        
+        .title {
+            font-family: Cardo;
+            font-size: 24px;
+            font-weight: 700;
+            color: $blue;
+            padding-bottom: 14px;
+        }
+
+        .intro {
+            font-family: Inter;
+            color: $gray;
+            font-size: 19px;
+            font-weight: 400;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            font-family: Cardo;
+            font-size: 19px;
+            color: $blue ;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            font-weight: 700;
+        }
+
+        p{
+            font-family: Inter;
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+}
