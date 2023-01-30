@@ -1,39 +1,40 @@
-.author-book{
+.author-book {
     width: 621px;
     height: 400px;
     display: flex;
 
-    &__img{
+    &__img {
         width: 300px;
         height: 400px;
         padding: 4px 4px 0 4px;
         display: block;
     }
 
-    &__content{
+    &__content {
         width: 280px;
         height: 333px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 33px 0 0 10px;
-        .title{
+
+        .title {
             font-family: Cardo; 
             font-weight: 700;
             font-size: 32px; 
             color: $blue;
         }
 
-        .intro{
+        .intro {
             font-family: Inter;
             font-size: 19px;
             color: $gray;
             font-weight: 400;
         }
 
-        .details{
+        .details {
 
-            &__list{
+            &__list {
                 font-family: Cardo;
                 font-weight: 700;
                 font-size: 24px; 
@@ -44,7 +45,7 @@
                 padding: 0 10px 0 0;
             }
     
-            span{
+            span {
                 display: block;
                 font-family: Inter;
                 font-size: 18px;
@@ -54,9 +55,7 @@
         }
     }
 
-
-
-    button{
+    button {
         width: 220px;
         height: 65px;
         padding: 20px, 53px, 21px, 53px;
