@@ -18,5 +18,13 @@
 @import 'base/mixins';
 
 /* Components */
-@import "components";
+@import "components/brand";
+@import "components/button";
+@import "components/header";
+@import "components/container";
+@import "components/fontsclasses";
+
+/* Pages */
 @import "pages";
+@import "pages/index";
+@import "pages/contact";
