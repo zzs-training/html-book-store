@@ -682,4 +682,13 @@ svg {
             }
         }
     }
+
+    &__end {
+        padding: 150px 0;
+    }
+}
+
+.home__footer {
+    height: 300px;
+    background-color: $blue;
 }
