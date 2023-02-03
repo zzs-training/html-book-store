@@ -37,6 +37,18 @@ svg {
     }
 }
 
+.colorclick {
+    background-color: $yellow !important;
+}
+
+.colorhover {
+    background-color: $light-blue ;
+}
+
+.colorbasic {
+    background-color: $gray;
+}
+
 .home__infor-details {
     .frame {
         width: 114px;
@@ -161,6 +173,12 @@ svg {
         color: $blue;
     }
 
+    h4 {
+        @extend %fontcardostyle;
+        font-size: 24px;
+        color: $blue;
+    }
+
     .homepage__header-content {
         @extend %flexcenter;
         flex-direction: column;
@@ -171,6 +189,55 @@ svg {
             background-color: $yellow;
             margin-top: 22px;
         }
+    }
+
+    .review-card {
+
+        h4,
+        h5 {
+            color: $white;
+        }
+
+        h5 {
+            @extend %fontcardostyle;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        width: 370px;
+        height: 309px;
+        @extend %flexcenter;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: $blue;
+        padding: 36px 31px;
+
+        &__header {
+            @extend %flexcenter;
+
+            &-name {
+                margin-left: 20px;
+
+                .showrating {
+                    width: 76px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .rating-circle:last-child {
+                        background-color: $blue;
+                        border: 1px solid $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .rating-circle {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: $yellow;
     }
 
     &__books {
@@ -382,13 +449,6 @@ svg {
     &__stepbystep {
         padding: 145px 0px;
 
-        h4 {
-            @extend %fontcardostyle;
-            font-size: 24px;
-            line-height: 30px;
-            color: $blue
-        }
-
         .stepbystep-container {
             @extend %flexcenter;
             flex-direction: column;
@@ -409,11 +469,11 @@ svg {
                     @extend %flexcenter;
                     justify-content: space-between;
                     flex-wrap: wrap;
-    
+
                     &__card {
                         width: calc((100% - 30px)/2);
                         height: 299px;
-                        background-color:#F4F8FF;
+                        background-color: #F4F8FF;
                         @extend %flexcenter;
                         flex-direction: column;
                         justify-content: space-between;
@@ -431,6 +491,192 @@ svg {
                             @extend %flexcenter;
                             background-color: $yellow;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    &__thechappters {
+        background-color: #F4F8FF;
+        padding: 150px 0px;
+
+        .thechappters-container {
+            @extend %flexcenter;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 1000px;
+
+        }
+
+        &__body {
+            width: 1300px;
+            @extend %flexcenter;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 50px 0 79px 0;
+
+            .thechappters__card {
+                width: calc((1300px - 40px)/2);
+                height: 270px;
+                padding: 45px 52px;
+                @extend %flexcenter;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                background-color: $white;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.075);
+
+                &:nth-child(n+3) {
+                    margin-top: 40px
+                }
+            }
+
+            .card__footer {
+                width: 465px;
+                @extend %flexcenter;
+                justify-content: space-between;
+
+                .home__infor-details {
+                    @extend %flexcenter;
+
+                    p {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        &__footer {
+            @extend %flexcenter;
+            flex-direction: column;
+
+            .thechappters__footer-note {
+                text-align: center;
+                margin-top: 32px;
+
+                p {
+                    font-size: 18px;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    &__reviews {
+        @extend %flexcenter;
+        padding: 141px 0px;
+
+        .reviews-container {
+            @extend %flexcenter;
+            width: 1300px;
+            justify-content: space-between;
+
+        }
+
+        &-introductions {
+            width: 418px;
+            height: 400px;
+            @extend %flexcenter;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .homepage__header-content {
+                align-items: flex-start;
+            }
+
+            .reviews-intro-footer {
+                p {
+                    color: $blue
+                }
+
+                .line__vote {
+                    display: flex;
+                    align-items: center;
+
+                    .reviews__star {
+                        display: flex;
+                        width: 130px;
+                        justify-content: space-between;
+
+                        .circle__group {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            clip-path: circle();
+
+                            .circle-left {
+                                width: 10px;
+                                height: 20px;
+                                background-color: $gray;
+                            }
+
+                            .circle-right {
+                                width: 10px;
+                                height: 20px;
+                                background-color: $gray;
+                            }
+                        }
+
+
+                    }
+
+                    p {
+                        @extend %fontcardostyle;
+                        font-size: 22px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+        &-cards {
+            @extend %flexcenter;
+
+            .reviews-cards__left {
+                .review-card:last-child {
+                    margin-top: 31px;
+                }
+            }
+        }
+
+        .reviews-cards__right {
+            margin-left: 30px;
+        }
+    }
+
+    &__news {
+        padding: 145px 0px;
+        background-color: #F4F8FF;
+        .news-container {
+            @extend %flexcenter;
+            flex-direction: column;
+        }
+
+        &-cards {
+            width: 1300px;
+            margin-top: 50px;
+            @extend %flexcenter;
+            justify-content: space-between;
+
+            .blog {
+                color: $blue;
+                background-color: $white;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.075);
+
+                .blog__footer {
+                    p {
+                        color: $blue;
                     }
                 }
             }
