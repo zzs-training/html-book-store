@@ -11,12 +11,20 @@ $default-fs: 14px;
 /* Grid setup */
 /* Colour palette */
 $black: #000;
+$lightGray:#DCE1E9;
 $white: #fff;
 $light-gray: #F6F8FC;
 
 $blue: #1B3764;
+<<<<<<< HEAD
 $light-blue:#B4C7E7;
+=======
+$lightBlue:#B4C7E7;
+$lightBlue-lighter:#F5F8FC;
+>>>>>>> develop
 $yellow: #FFCA42;
-$gray: #969AA0
+$gray: #969AA0;
 
 /* Components */
+$paddingValuePage:310px;
+$squareSize:45px;

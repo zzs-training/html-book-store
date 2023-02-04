@@ -12,7 +12,11 @@
     display: inline-block;
     padding: 10px 10px;
     font-family: 'Cardo';
+<<<<<<< HEAD
     font-weight: bold;
+=======
+    font-weight: 700;
+>>>>>>> develop
     font-size: 19px;
     background-color: white;
 
@@ -86,6 +90,13 @@
     @include btnDesign-color(transparent, $blue, $blue)
 }
 
+<<<<<<< HEAD
+=======
+.btn-lightblue-bgr {
+    @include btnDesign-color($lightBlue-lighter, $blue, transparent)
+}
+
+>>>>>>> develop
 ///////////////////////////////////////////////////////
 /// Format table
 .container__buttonpage {

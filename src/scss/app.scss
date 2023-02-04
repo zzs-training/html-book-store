@@ -18,10 +18,21 @@
 @import 'base/mixins';
 
 /* Components */
-@import "components";
+@import "components/brand";
+@import "components/button";
+@import "components/header";
+@import "components/container";
+@import "components/fontsclasses";
+
+/* Pages */
 @import "pages";
+<<<<<<< HEAD
 @import "components/container";
 @import "components/button";
 @import "components/header";
 @import "components/brand";
 @import "components/freechapter";
+=======
+@import "pages/index";
+@import "pages/contact";
+>>>>>>> develop

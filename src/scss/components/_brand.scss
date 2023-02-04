@@ -13,7 +13,11 @@
 }
 
 .brand__container-square {
+<<<<<<< HEAD
     @include paintSquare(45px);
+=======
+    @include paintSquare($squareSize);
+>>>>>>> develop
     background-color: $white;
 }
 
