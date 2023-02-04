@@ -1,0 +1,182 @@
+%fontcardo-format-style-1 {
+    font-family: Cardo;
+    font-weight: 700;
+    font-size: 32px;
+    color: $blue;
+}
+
+%fontinter-format-style-1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    color: $yellow;
+}
+
+.card-productdetails {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 19px;
+    color: $gray;
+    margin-top: 150px;
+
+    img {
+        width: 30%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 631px;
+        padding: 23px 0 23px 86px;
+
+        h3 {
+            @extend %fontcardo-format-style-1;
+        }
+
+        h4 {
+            @extend %fontinter-format-style-1;
+
+            small {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    &__infor {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-container {
+            display: flex;
+
+            .infor-name {
+                width: 87px;
+            }
+
+            .infor-spacing {
+                margin: 0px 38px;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+
+        .show-value {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-clickbuy {
+            display: flex;
+
+            p {
+                margin-left: 13px;
+            }
+
+            img {
+                width: 20px;
+            }
+
+            ;
+        }
+    }
+}
+
+.product__button {
+    width: 679px;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 48px auto;
+
+    &__primary,
+    &__secondary {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 20px 41px;
+    }
+}
+
+.product__description {
+    width: 1297px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 152px auto;
+
+    &__card {
+        width: 600px;
+
+        h3 {
+            @extend %fontcardo-format-style-1;
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 19px;
+            color: $gray;
+            margin-top: 12px;
+        }
+    }
+
+}
+
+
+.product__policies {
+    padding: 85px;
+    display: flex;
+    justify-content: center;
+    background-color: $yellow;
+
+    &-container {
+        width: 1297px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-card {
+        width: 365px;
+        height: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand__container-square {
+            background-color: $blue;
+            width: 80px;
+            height: 80px;
+        }
+
+        h3 {
+            @extend %fontcardo-format-style-1
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 19px;
+            color: $blue;
+            text-align: center;
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-yellow-border {
+        color: white;
+    }
+}

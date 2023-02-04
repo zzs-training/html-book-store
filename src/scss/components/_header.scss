@@ -1,0 +1,73 @@
+.header-remake {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  font-family: 'Inter';
+  color: $white;
+}
+
+.header__brand {
+  display: flex;
+  width: 30%;
+
+  .socials {
+    width: 40%;
+    margin-left: 33px;
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+.header__navbutton {
+  width: 40%;
+  margin-left: 90px;
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header-nav-li {
+  select {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    option:not(:checked) {
+      color: black;
+      background-color: rgba(184, 184, 184, 0.288);
+    }
+
+    option:checked {
+      background-color: $blue;
+    }
+  }
+}
+
+.introduction {
+  width: 633px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 138px auto 0px auto;
+
+  h1 {
+    font-weight: 600;
+  }
+
+  &__line {
+    width: 55px;
+    height: 4px;
+    background-color: $yellow;
+  }
+
+  &__content {
+    text-align: center;
+    font-size: 19px;
+    color: $lightBlue;
+  }
+}

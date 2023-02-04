@@ -1,0 +1,113 @@
+@mixin btnDesign-color($color, $colorText, $boderColor) {
+    background-color: $color;
+    color: $colorText;
+    border: 1px solid $boderColor;
+}
+
+@mixin btnDesign-size($padTbot, $padLr) {
+    padding: $padTbot $padLr;
+}
+
+.btnbasic {
+    display: inline-block;
+    padding: 10px 10px;
+    font-family: 'Cardo';
+    font-weight: 700;
+    font-size: 19px;
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+//////////////////////////////////////////////////////
+/// Size Button small <100px< medium <200px <large
+.btn-large-xl {
+    @include btnDesign-size(20px, 242px)
+}
+
+.btn-large-l {
+    @include btnDesign-size(20px, 222px)
+}
+
+.btn-large-m {
+    @include btnDesign-size(20px, 119px)
+}
+
+.btn-medium-xl {
+    @include btnDesign-size(20px, 108px)
+}
+
+.btn-medium-l {
+    @include btnDesign-size(20px, 102px)
+}
+
+.btn-medium-m {
+    @include btnDesign-size(6px, 100px)
+}
+
+//////////////////////////////////////////////////
+.btn-small-xl-1 {
+    @include btnDesign-size(6px, 67px)
+}
+
+.btn-small-xl {
+    @include btnDesign-size(20px, 62px)
+}
+
+.btn-small-l {
+    @include btnDesign-size(20px, 53px)
+}
+
+.btn-small-m-2 {
+    @include btnDesign-size(20px, 41px)
+}
+
+.btn-small-m-1 {
+    @include btnDesign-size(13px, 33px)
+}
+
+//////////////////////////////////////////////////////
+/// Button Color
+.btn-yellow-bgr {
+    @include btnDesign-color($yellow, $blue, transparent)
+}
+
+.btn-yellow-border {
+    @include btnDesign-color(transparent, $blue, $yellow)
+}
+
+.btn-blue-bgr {
+    @include btnDesign-color($blue, $white, transparent)
+}
+
+.btn-blue-border {
+    @include btnDesign-color(transparent, $blue, $blue)
+}
+
+.btn-lightblue-bgr {
+    @include btnDesign-color($lightBlue-lighter, $blue, transparent)
+}
+
+///////////////////////////////////////////////////////
+/// Format table
+.container__buttonpage {
+    th {
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
+
+    table,
+    th,
+    td {
+        font-family: DINP-R !important;
+        border: 1px solid black !important;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 15px 15px !important;
+    }
+}
