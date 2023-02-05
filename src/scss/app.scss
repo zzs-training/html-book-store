@@ -23,8 +23,11 @@
 @import "components/header";
 @import "components/container";
 @import "components/fontsclasses";
+@import "components/author-book";
 
 /* Pages */
 @import "pages";
 @import "pages/index";
 @import "pages/contact";
+@import "pages/author";
+@import "pages/store";
