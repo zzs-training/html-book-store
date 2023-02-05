@@ -23,9 +23,13 @@
 @import "components/header";
 @import "components/container";
 @import "components/fontsclasses";
+<<<<<<< HEAD
 @import "components/footer";
+=======
+@import "components/card-blog";
+@import "components/freechapter";
+>>>>>>> develop
 
 /* Pages */
 @import "pages";
 @import "pages/index";
-@import "pages/contact";
