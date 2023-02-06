@@ -23,7 +23,7 @@
 @import "components/header";
 @import "components/container";
 @import "components/fontsclasses";
-
+@import "components/author-book";
 @import "components/card-blog";
 @import "components/freechapter";
 
@@ -31,5 +31,7 @@
 @import "pages";
 @import "pages/index";
 @import "pages/contact";
+@import "pages/author";
+@import "pages/store";
 @import "pages/productdetails";
 @import "pages/blogdetail";
