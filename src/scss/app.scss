@@ -23,10 +23,19 @@
 @import "components/header";
 @import "components/container";
 @import "components/fontsclasses";
+<<<<<<< HEAD
 @import "components/footer";
+=======
+@import "components/author-book";
+>>>>>>> develop
 @import "components/card-blog";
 @import "components/freechapter";
 
 /* Pages */
 @import "pages";
 @import "pages/index";
+@import "pages/contact";
+@import "pages/author";
+@import "pages/store";
+@import "pages/productdetails";
+@import "pages/blogdetail";
