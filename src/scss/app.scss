@@ -18,16 +18,16 @@
 @import 'base/mixins';
 
 /* Components */
-@import "components/author-book";
-@import "components/blog-detail";
 @import "components/brand";
 @import "components/button";
 @import "components/card-blog";
 @import "components/card-store";
 @import "components/container";
 @import "components/fontsclasses";
+@import "components/card-blog";
+@import "components/freechapter";
 @import "components/header";
-
+@import "components/author-book";
 
 
 /* Pages */
@@ -37,3 +37,6 @@
 @import "pages/page404";
 @import "pages/productdetails";
 @import "pages/store";
+@import "pages/blogdetail";
+@import "pages/author";
+@import "pages/footer";

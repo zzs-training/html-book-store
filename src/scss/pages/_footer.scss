@@ -1,0 +1,156 @@
+.footer {
+    width: 100%;
+    height: 510px;
+    background-color: $blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__content {
+        width: 1300px;
+        height: 280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 85px;
+
+        .left {
+            width: 250px;
+            height: 120px;
+
+            .left-logo {
+                display: flex;
+                
+
+                .page {
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: Inter;
+                    margin-left: 10px;
+                    color: $white;
+                }
+            }
+
+            .left-icon {
+                margin-top: 27px;
+                display: flex;
+                .icon {
+                    width: 55px;
+                    height: 55px;
+                    border: 1px solid $yellow;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .right {
+            width: 870px;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+
+            .explore {
+                width: 189px;
+                height: 274px;
+            }
+
+            .utility {
+                width: 226px;
+                height: 274px;
+            }
+
+            .contact {
+                width: 322px;
+                height: 215px;
+
+                .contact-content {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 34px;
+                    font-size: 18px;
+                    color: $light-brown;
+                    font-family: Inter;
+
+                    tr {
+                        height: 70px;
+                    }
+
+                    span {
+                        font-family: Cardo;
+                        color: $white;
+                        margin-right: 20px;
+                    }
+
+                }
+            }
+
+            .intro {
+                font-size: 24px;
+                font-family: Cardo;
+                font-weight: 700;
+                color: $white;
+            }
+
+            .explore-utility {
+                padding-top: 34px;
+                font-size: 18px;
+                font-family: Inter;
+                font-weight: 400;
+                color: $light-brown;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding-bottom: 70px;
+                }
+
+                .utility-icon {
+                    display: inline;
+                    padding-right: 12px;
+                }
+
+                span {
+                    padding-bottom: 20px;
+                }
+            }
+
+
+        }
+    }
+
+    &__license {
+        width: 1300px;
+        height: 52px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .license-img {
+            padding-right: 7px;
+        }
+
+        .content {
+            padding-top: 18px;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: Inter;
+            color: $light-brown;
+
+            span {
+                color: $white;
+            }
+        }
+    }
+
+    hr {
+        width: 1300px;
+        margin: 0 auto;
+        color: $white;
+        margin-top: 120px;
+        opacity: 0.2;
+    }
+}
