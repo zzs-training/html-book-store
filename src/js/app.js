@@ -1,5 +1,7 @@
 import '../scss/app.scss';
 
+const BookService = require('./services/book.service');
+
 /* Your JS Code goes here */
 
 function ratingFirst() {
@@ -30,3 +32,9 @@ function addEventToElement() {
 }
 
 addEventToElement();
+
+// This is example for using service
+window.onload = () => {
+  BookService.fetch()
+    .then((response) => console.log(response.data));
+};
