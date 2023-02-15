@@ -29,8 +29,6 @@ function addEventToElement() {
     document.getElementById(`vote-${i}`).addEventListener('click', voteRatingClick);
   }
 }
-ratingFirst();
-addEventToElement();
 
 // This is example for using service
 // window.onload = () => {
@@ -51,6 +49,8 @@ function load() {
       const authors = response.data;
       console.log(authors);
       showHtmlContent(authors, 'showContent');
+      ratingFirst();
+      addEventToElement();
     });
 }
 
