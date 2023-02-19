@@ -5,6 +5,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
       ApiService.get('/books')
         .then((response) => {
+          // console.log(response.data);
           resolve(response.data);
         })
         .catch((error) => {
