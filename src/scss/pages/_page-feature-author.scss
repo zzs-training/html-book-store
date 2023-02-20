@@ -1,0 +1,82 @@
+#pageFeatureAuthor #showContent {
+    .about {
+        height: auto;
+        background-color: $white;
+        padding-bottom: 100px;
+        width: 1298px;
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+        margin-bottom: 150px;
+
+        .author {
+            height: auto;
+
+            &-banner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $light-gray;
+                margin-bottom: 100px;
+                padding-left: 66px;
+
+                &-title {
+                    position: relative;
+
+                    h4 {
+                        font-family: 'Inter';
+                        font-size: 100px;
+                        font-weight: bold;
+                        opacity: 0.2;
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 70px;
+                        left: 10px;
+                        font-family: 'Inter';
+                        font-size: 50px;
+                        font-weight: 600;
+                        color: $blue;
+                    }
+
+                }
+
+                &-img {
+                    width: 48%;
+
+                    img {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        .author__content {
+            table {
+                td {
+                    width: 200px;
+                }
+
+                tr {
+                    td:nth-child(1) {
+                        display: flex;
+                        width: 200px !important;
+                        margin-right: 20px;
+
+                        p {
+                            color: $blue;
+                            font-family: Cardo;
+                            font-size: 24px;
+                            font-weight: 700;
+                            min-width: 175px;
+                        }
+
+                    }
+                }
+            }
+
+            .title {
+                padding-right: 66px;
+            }
+        }
+    }
+}

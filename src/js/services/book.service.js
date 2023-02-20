@@ -1,9 +1,9 @@
 const ApiService = require('./api.service');
 
 module.exports = {
-  fetch() {
+  fetch(value, params) {
     return new Promise((resolve, reject) => {
-      ApiService.get('/books')
+      ApiService.get(`/${value}`, { params })
         .then((response) => {
           resolve(response.data);
         })
